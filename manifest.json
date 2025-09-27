@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Goliath LLC",
+  "version": "1.0",
+  "description": "Reemplaza todas las instancias de Google por Goliath. Por ninguna razón en particular.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["goliath.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "Goliath.png"],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
+  "homepage_url": "https://codeberg.org/adrbog",
+  "author": "AdrBog",
+  "icons": {
+    "48": "icon.png"
+  }
+}
